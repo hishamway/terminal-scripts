@@ -1,0 +1,974 @@
+[2025-02-03 16:51:50.198] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@internal:1] Verbose("PJSIP/sipcore-0000255e", "Call from +17275607700 to +19709990955") in new stack
+[2025-02-03 16:51:50.198] VERBOSE[2991401][C-00000a70] app_verbose.c: Call from +17275607700 to +19709990955
+[2025-02-03 16:51:50.198] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@internal:2] NoOp("PJSIP/sipcore-0000255e", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 16:51:50.198] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@internal:3] Set("PJSIP/sipcore-0000255e", "CALLERID(name)=+17275607700@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 16:51:50.198] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@internal:4] GotoIf("PJSIP/sipcore-0000255e", "AC5107e286b5750624bd829224c387e986?from-twilio,+19709990955,1") in new stack
+[2025-02-03 16:51:50.199] VERBOSE[2991401][C-00000a70] pbx_builtins.c: Goto (from-twilio,+19709990955,1)
+[2025-02-03 16:51:50.199] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@from-twilio:1] Verbose("PJSIP/sipcore-0000255e", "Call from +17275607700 to +19709990955") in new stack
+[2025-02-03 16:51:50.199] VERBOSE[2991401][C-00000a70] app_verbose.c: Call from +17275607700 to +19709990955
+[2025-02-03 16:51:50.199] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@from-twilio:2] Stasis("PJSIP/sipcore-0000255e", "stasis-bifrost,incoming") in new stack
+[2025-02-03 16:51:50.200] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:1] Verbose("PJSIP/sipcore-0000255e", "Detecting fax...") in new stack
+[2025-02-03 16:51:50.200] VERBOSE[2991401][C-00000a70] app_verbose.c: Detecting fax...
+[2025-02-03 16:51:50.200] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:2] Set("PJSIP/sipcore-0000255e", "To=+19709990955") in new stack
+[2025-02-03 16:51:50.200] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:3] Answer("PJSIP/sipcore-0000255e", "") in new stack
+[2025-02-03 16:51:50.394] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:4] Ringing("PJSIP/sipcore-0000255e", "") in new stack
+[2025-02-03 16:51:50.394] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:5] Wait("PJSIP/sipcore-0000255e", "5") in new stack
+[2025-02-03 16:51:55.395] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:6] Goto("PJSIP/sipcore-0000255e", "fax-number-call,+19709990955,1") in new stack
+[2025-02-03 16:51:55.395] VERBOSE[2991401][C-00000a70] pbx_builtins.c: Goto (fax-number-call,+19709990955,1)
+[2025-02-03 16:51:55.395] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@fax-number-call:1] Stasis("PJSIP/sipcore-0000255e", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 16:51:56.152] NOTICE[2991401][C-00000a70] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000255e' but no fax extension in 'fax-number-call'
+[2025-02-03 16:51:56.492] VERBOSE[2991401][C-00000a70] file.c: <PJSIP/sipcore-0000255e> Playing '6792d59b-ed04-4f3c-a055-5b3a76282f29.slin' (language 'en')
+[2025-02-03 16:52:03.706] NOTICE[2991401][C-00000a70] res_stasis_playback.c: 1738601510.30876: Playback stopped for sound:6792d59b-ed04-4f3c-a055-5b3a76282f29
+[2025-02-03 16:52:03.707] VERBOSE[2991977][C-00000a70] bridge_channel.c: Channel PJSIP/sipcore-0000255e joined 'simple_bridge' stasis-bridge <BRICV2QU10HJYOaRk_LcVaf>
+[2025-02-03 16:52:14.456] VERBOSE[2991984][C-00000a70] app.c: Message ended by control
+[2025-02-03 16:52:14.467] VERBOSE[2991977][C-00000a70] bridge_channel.c: Channel PJSIP/sipcore-0000255e left 'simple_bridge' stasis-bridge <BRICV2QU10HJYOaRk_LcVaf>
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@internal:1] Verbose("PJSIP/sipcore-00002671", "Call from +17275607700 to +19709990955") in new stack
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] app_verbose.c: Call from +17275607700 to +19709990955
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@internal:2] NoOp("PJSIP/sipcore-00002671", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@internal:3] Set("PJSIP/sipcore-00002671", "CALLERID(name)=+17275607700@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@internal:4] GotoIf("PJSIP/sipcore-00002671", "AC5107e286b5750624bd829224c387e986?from-twilio,+19709990955,1") in new stack
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] pbx_builtins.c: Goto (from-twilio,+19709990955,1)
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@from-twilio:1] Verbose("PJSIP/sipcore-00002671", "Call from +17275607700 to +19709990955") in new stack
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] app_verbose.c: Call from +17275607700 to +19709990955
+[2025-02-03 17:01:50.607] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@from-twilio:2] Stasis("PJSIP/sipcore-00002671", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:01:50.609] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@receive-fax:1] Verbose("PJSIP/sipcore-00002671", "Detecting fax...") in new stack
+[2025-02-03 17:01:50.609] VERBOSE[3009413][C-00000ab6] app_verbose.c: Detecting fax...
+[2025-02-03 17:01:50.609] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@receive-fax:2] Set("PJSIP/sipcore-00002671", "To=+19709990955") in new stack
+[2025-02-03 17:01:50.609] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@receive-fax:3] Answer("PJSIP/sipcore-00002671", "") in new stack
+[2025-02-03 17:01:50.793] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@receive-fax:4] Ringing("PJSIP/sipcore-00002671", "") in new stack
+[2025-02-03 17:01:50.793] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@receive-fax:5] Wait("PJSIP/sipcore-00002671", "5") in new stack
+[2025-02-03 17:01:55.794] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@receive-fax:6] Goto("PJSIP/sipcore-00002671", "fax-number-call,+19709990955,1") in new stack
+[2025-02-03 17:01:55.794] VERBOSE[3009413][C-00000ab6] pbx_builtins.c: Goto (fax-number-call,+19709990955,1)
+[2025-02-03 17:01:55.794] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@fax-number-call:1] Stasis("PJSIP/sipcore-00002671", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:01:55.905] VERBOSE[3009413][C-00000ab6] file.c: <PJSIP/sipcore-00002671> Playing '6792d59b-ed04-4f3c-a055-5b3a76282f29.slin' (language 'en')
+[2025-02-03 17:01:56.511] NOTICE[3009413][C-00000ab6] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002671' but no fax extension in 'fax-number-call'
+[2025-02-03 17:02:00.526] NOTICE[3009413][C-00000ab6] res_stasis_playback.c: 1738602110.31731: Playback stopped for sound:6792d59b-ed04-4f3c-a055-5b3a76282f29
+[2025-02-03 17:02:00.528] VERBOSE[3009826][C-00000ab6] bridge_channel.c: Channel PJSIP/sipcore-00002671 joined 'simple_bridge' stasis-bridge <BRKiprZKQhX3FnrHTxD09fm>
+[2025-02-03 17:02:10.441] VERBOSE[3009833][C-00000ab6] app.c: Message ended by control
+[2025-02-03 17:02:10.452] VERBOSE[3009826][C-00000ab6] bridge_channel.c: Channel PJSIP/sipcore-00002671 left 'simple_bridge' stasis-bridge <BRKiprZKQhX3FnrHTxD09fm>
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@internal:1] Verbose("PJSIP/sipcore-000026a7", "Call from +17325423012 to +14692426457") in new stack
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] app_verbose.c: Call from +17325423012 to +14692426457
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@internal:2] NoOp("PJSIP/sipcore-000026a7", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@internal:3] Set("PJSIP/sipcore-000026a7", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@internal:4] GotoIf("PJSIP/sipcore-000026a7", "AC5107e286b5750624bd829224c387e986?from-twilio,+14692426457,1") in new stack
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] pbx_builtins.c: Goto (from-twilio,+14692426457,1)
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@from-twilio:1] Verbose("PJSIP/sipcore-000026a7", "Call from +17325423012 to +14692426457") in new stack
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] app_verbose.c: Call from +17325423012 to +14692426457
+[2025-02-03 17:03:04.858] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@from-twilio:2] Stasis("PJSIP/sipcore-000026a7", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:03:04.860] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@receive-fax:1] Verbose("PJSIP/sipcore-000026a7", "Detecting fax...") in new stack
+[2025-02-03 17:03:04.860] VERBOSE[3011786][C-00000ac3] app_verbose.c: Detecting fax...
+[2025-02-03 17:03:04.860] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@receive-fax:2] Set("PJSIP/sipcore-000026a7", "To=+14692426457") in new stack
+[2025-02-03 17:03:04.860] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@receive-fax:3] Answer("PJSIP/sipcore-000026a7", "") in new stack
+[2025-02-03 17:03:04.992] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@receive-fax:4] Ringing("PJSIP/sipcore-000026a7", "") in new stack
+[2025-02-03 17:03:04.992] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@receive-fax:5] Wait("PJSIP/sipcore-000026a7", "5") in new stack
+[2025-02-03 17:03:09.993] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@receive-fax:6] Goto("PJSIP/sipcore-000026a7", "fax-number-call,+14692426457,1") in new stack
+[2025-02-03 17:03:09.993] VERBOSE[3011786][C-00000ac3] pbx_builtins.c: Goto (fax-number-call,+14692426457,1)
+[2025-02-03 17:03:09.993] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@fax-number-call:1] Stasis("PJSIP/sipcore-000026a7", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:03:10.691] NOTICE[3011786][C-00000ac3] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000026a7' but no fax extension in 'fax-number-call'
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@internal:1] Verbose("PJSIP/sipcore-00002788", "Call from +17248013047 to +17604366256") in new stack
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] app_verbose.c: Call from +17248013047 to +17604366256
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@internal:2] NoOp("PJSIP/sipcore-00002788", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@internal:3] Set("PJSIP/sipcore-00002788", "CALLERID(name)=+17248013047@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@internal:4] GotoIf("PJSIP/sipcore-00002788", "AC5107e286b5750624bd829224c387e986?from-twilio,+17604366256,1") in new stack
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] pbx_builtins.c: Goto (from-twilio,+17604366256,1)
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@from-twilio:1] Verbose("PJSIP/sipcore-00002788", "Call from +17248013047 to +17604366256") in new stack
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] app_verbose.c: Call from +17248013047 to +17604366256
+[2025-02-03 17:07:55.454] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@from-twilio:2] Stasis("PJSIP/sipcore-00002788", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:07:55.456] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@receive-fax:1] Verbose("PJSIP/sipcore-00002788", "Detecting fax...") in new stack
+[2025-02-03 17:07:55.456] VERBOSE[3021137][C-00000af9] app_verbose.c: Detecting fax...
+[2025-02-03 17:07:55.456] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@receive-fax:2] Set("PJSIP/sipcore-00002788", "To=+17604366256") in new stack
+[2025-02-03 17:07:55.456] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@receive-fax:3] Answer("PJSIP/sipcore-00002788", "") in new stack
+[2025-02-03 17:07:55.681] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@receive-fax:4] Ringing("PJSIP/sipcore-00002788", "") in new stack
+[2025-02-03 17:07:55.681] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@receive-fax:5] Wait("PJSIP/sipcore-00002788", "5") in new stack
+[2025-02-03 17:08:00.682] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@receive-fax:6] Goto("PJSIP/sipcore-00002788", "fax-number-call,+17604366256,1") in new stack
+[2025-02-03 17:08:00.682] VERBOSE[3021137][C-00000af9] pbx_builtins.c: Goto (fax-number-call,+17604366256,1)
+[2025-02-03 17:08:00.682] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@fax-number-call:1] Stasis("PJSIP/sipcore-00002788", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:08:01.200] NOTICE[3021137][C-00000af9] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002788' but no fax extension in 'fax-number-call'
+[2025-02-03 17:11:51.609] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@internal:1] Verbose("PJSIP/sipcore-00002808", "Call from +17275607700 to +19709990955") in new stack
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] app_verbose.c: Call from +17275607700 to +19709990955
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@internal:2] NoOp("PJSIP/sipcore-00002808", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@internal:3] Set("PJSIP/sipcore-00002808", "CALLERID(name)=+17275607700@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@internal:4] GotoIf("PJSIP/sipcore-00002808", "AC5107e286b5750624bd829224c387e986?from-twilio,+19709990955,1") in new stack
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] pbx_builtins.c: Goto (from-twilio,+19709990955,1)
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@from-twilio:1] Verbose("PJSIP/sipcore-00002808", "Call from +17275607700 to +19709990955") in new stack
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] app_verbose.c: Call from +17275607700 to +19709990955
+[2025-02-03 17:11:51.610] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@from-twilio:2] Stasis("PJSIP/sipcore-00002808", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:11:51.612] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@receive-fax:1] Verbose("PJSIP/sipcore-00002808", "Detecting fax...") in new stack
+[2025-02-03 17:11:51.612] VERBOSE[3028623][C-00000b1b] app_verbose.c: Detecting fax...
+[2025-02-03 17:11:51.612] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@receive-fax:2] Set("PJSIP/sipcore-00002808", "To=+19709990955") in new stack
+[2025-02-03 17:11:51.612] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@receive-fax:3] Answer("PJSIP/sipcore-00002808", "") in new stack
+[2025-02-03 17:11:51.878] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@receive-fax:4] Ringing("PJSIP/sipcore-00002808", "") in new stack
+[2025-02-03 17:11:51.878] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@receive-fax:5] Wait("PJSIP/sipcore-00002808", "5") in new stack
+[2025-02-03 17:11:56.880] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@receive-fax:6] Goto("PJSIP/sipcore-00002808", "fax-number-call,+19709990955,1") in new stack
+[2025-02-03 17:11:56.880] VERBOSE[3028623][C-00000b1b] pbx_builtins.c: Goto (fax-number-call,+19709990955,1)
+[2025-02-03 17:11:56.880] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@fax-number-call:1] Stasis("PJSIP/sipcore-00002808", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:11:56.944] VERBOSE[3028623][C-00000b1b] file.c: <PJSIP/sipcore-00002808> Playing '6792d59b-ed04-4f3c-a055-5b3a76282f29.slin' (language 'en')
+[2025-02-03 17:11:57.657] NOTICE[3028623][C-00000b1b] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002808' but no fax extension in 'fax-number-call'
+[2025-02-03 17:12:04.172] NOTICE[3028623][C-00000b1b] res_stasis_playback.c: 1738602711.32982: Playback stopped for sound:6792d59b-ed04-4f3c-a055-5b3a76282f29
+[2025-02-03 17:12:04.174] VERBOSE[3029176][C-00000b1b] bridge_channel.c: Channel PJSIP/sipcore-00002808 joined 'simple_bridge' stasis-bridge <BR5nvAqA3bs17keaHmbSDsy>
+[2025-02-03 17:12:12.556] VERBOSE[3029183][C-00000b1b] app.c: Message ended by control
+[2025-02-03 17:12:12.568] VERBOSE[3029176][C-00000b1b] bridge_channel.c: Channel PJSIP/sipcore-00002808 left 'simple_bridge' stasis-bridge <BR5nvAqA3bs17keaHmbSDsy>
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@internal:1] Verbose("PJSIP/sipcore-00002836", "Call from +17325423012 to +14692426457") in new stack
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] app_verbose.c: Call from +17325423012 to +14692426457
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@internal:2] NoOp("PJSIP/sipcore-00002836", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@internal:3] Set("PJSIP/sipcore-00002836", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@internal:4] GotoIf("PJSIP/sipcore-00002836", "AC5107e286b5750624bd829224c387e986?from-twilio,+14692426457,1") in new stack
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] pbx_builtins.c: Goto (from-twilio,+14692426457,1)
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@from-twilio:1] Verbose("PJSIP/sipcore-00002836", "Call from +17325423012 to +14692426457") in new stack
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] app_verbose.c: Call from +17325423012 to +14692426457
+[2025-02-03 17:13:06.441] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@from-twilio:2] Stasis("PJSIP/sipcore-00002836", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:13:06.443] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@receive-fax:1] Verbose("PJSIP/sipcore-00002836", "Detecting fax...") in new stack
+[2025-02-03 17:13:06.443] VERBOSE[3031247][C-00000b24] app_verbose.c: Detecting fax...
+[2025-02-03 17:13:06.443] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@receive-fax:2] Set("PJSIP/sipcore-00002836", "To=+14692426457") in new stack
+[2025-02-03 17:13:06.443] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@receive-fax:3] Answer("PJSIP/sipcore-00002836", "") in new stack
+[2025-02-03 17:13:06.707] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@receive-fax:4] Ringing("PJSIP/sipcore-00002836", "") in new stack
+[2025-02-03 17:13:06.707] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@receive-fax:5] Wait("PJSIP/sipcore-00002836", "5") in new stack
+[2025-02-03 17:13:11.708] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@receive-fax:6] Goto("PJSIP/sipcore-00002836", "fax-number-call,+14692426457,1") in new stack
+[2025-02-03 17:13:11.708] VERBOSE[3031247][C-00000b24] pbx_builtins.c: Goto (fax-number-call,+14692426457,1)
+[2025-02-03 17:13:11.708] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@fax-number-call:1] Stasis("PJSIP/sipcore-00002836", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:13:12.405] NOTICE[3031247][C-00000b24] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002836' but no fax extension in 'fax-number-call'
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@internal:1] Verbose("PJSIP/sipcore-0000291d", "Call from +17325423012 to +14692426457") in new stack
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] app_verbose.c: Call from +17325423012 to +14692426457
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@internal:2] NoOp("PJSIP/sipcore-0000291d", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@internal:3] Set("PJSIP/sipcore-0000291d", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@internal:4] GotoIf("PJSIP/sipcore-0000291d", "AC5107e286b5750624bd829224c387e986?from-twilio,+14692426457,1") in new stack
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] pbx_builtins.c: Goto (from-twilio,+14692426457,1)
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@from-twilio:1] Verbose("PJSIP/sipcore-0000291d", "Call from +17325423012 to +14692426457") in new stack
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] app_verbose.c: Call from +17325423012 to +14692426457
+[2025-02-03 17:23:06.516] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@from-twilio:2] Stasis("PJSIP/sipcore-0000291d", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:23:06.518] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@receive-fax:1] Verbose("PJSIP/sipcore-0000291d", "Detecting fax...") in new stack
+[2025-02-03 17:23:06.518] VERBOSE[3049520][C-00000b62] app_verbose.c: Detecting fax...
+[2025-02-03 17:23:06.518] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@receive-fax:2] Set("PJSIP/sipcore-0000291d", "To=+14692426457") in new stack
+[2025-02-03 17:23:06.518] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@receive-fax:3] Answer("PJSIP/sipcore-0000291d", "") in new stack
+[2025-02-03 17:23:06.626] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@receive-fax:4] Ringing("PJSIP/sipcore-0000291d", "") in new stack
+[2025-02-03 17:23:06.626] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@receive-fax:5] Wait("PJSIP/sipcore-0000291d", "5") in new stack
+[2025-02-03 17:23:11.627] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@receive-fax:6] Goto("PJSIP/sipcore-0000291d", "fax-number-call,+14692426457,1") in new stack
+[2025-02-03 17:23:11.627] VERBOSE[3049520][C-00000b62] pbx_builtins.c: Goto (fax-number-call,+14692426457,1)
+[2025-02-03 17:23:11.627] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@fax-number-call:1] Stasis("PJSIP/sipcore-0000291d", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:23:12.304] NOTICE[3049520][C-00000b62] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000291d' but no fax extension in 'fax-number-call'
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@internal:1] Verbose("PJSIP/sipcore-000029cc", "Call from +18013706000 to +13072653447") in new stack
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] app_verbose.c: Call from +18013706000 to +13072653447
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@internal:2] NoOp("PJSIP/sipcore-000029cc", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@internal:3] Set("PJSIP/sipcore-000029cc", "CALLERID(name)=+18013706000@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@internal:4] GotoIf("PJSIP/sipcore-000029cc", "AC5107e286b5750624bd829224c387e986?from-twilio,+13072653447,1") in new stack
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] pbx_builtins.c: Goto (from-twilio,+13072653447,1)
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@from-twilio:1] Verbose("PJSIP/sipcore-000029cc", "Call from +18013706000 to +13072653447") in new stack
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] app_verbose.c: Call from +18013706000 to +13072653447
+[2025-02-03 17:29:06.686] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@from-twilio:2] Stasis("PJSIP/sipcore-000029cc", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:29:06.688] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@receive-fax:1] Verbose("PJSIP/sipcore-000029cc", "Detecting fax...") in new stack
+[2025-02-03 17:29:06.688] VERBOSE[3060646][C-00000b8c] app_verbose.c: Detecting fax...
+[2025-02-03 17:29:06.688] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@receive-fax:2] Set("PJSIP/sipcore-000029cc", "To=+13072653447") in new stack
+[2025-02-03 17:29:06.688] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@receive-fax:3] Answer("PJSIP/sipcore-000029cc", "") in new stack
+[2025-02-03 17:29:06.948] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@receive-fax:4] Ringing("PJSIP/sipcore-000029cc", "") in new stack
+[2025-02-03 17:29:06.948] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@receive-fax:5] Wait("PJSIP/sipcore-000029cc", "5") in new stack
+[2025-02-03 17:29:11.949] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@receive-fax:6] Goto("PJSIP/sipcore-000029cc", "fax-number-call,+13072653447,1") in new stack
+[2025-02-03 17:29:11.949] VERBOSE[3060646][C-00000b8c] pbx_builtins.c: Goto (fax-number-call,+13072653447,1)
+[2025-02-03 17:29:11.949] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@fax-number-call:1] Stasis("PJSIP/sipcore-000029cc", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:29:18.366] NOTICE[3060646][C-00000b8c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000029cc' but no fax extension in 'fax-number-call'
+[2025-02-03 17:48:23.125] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002bcc", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 17:48:23.125] VERBOSE[3095877][C-00000c0a] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 17:48:23.125] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002bcc", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:48:23.126] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002bcc", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:48:23.126] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002bcc", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 17:48:23.126] VERBOSE[3095877][C-00000c0a] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 17:48:23.126] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002bcc", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 17:48:23.126] VERBOSE[3095877][C-00000c0a] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 17:48:23.126] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002bcc", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:48:23.128] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002bcc", "Detecting fax...") in new stack
+[2025-02-03 17:48:23.128] VERBOSE[3095877][C-00000c0a] app_verbose.c: Detecting fax...
+[2025-02-03 17:48:23.128] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002bcc", "To=+13034094448") in new stack
+[2025-02-03 17:48:23.128] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002bcc", "") in new stack
+[2025-02-03 17:48:23.336] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002bcc", "") in new stack
+[2025-02-03 17:48:23.336] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002bcc", "5") in new stack
+[2025-02-03 17:48:28.338] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002bcc", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 17:48:28.338] VERBOSE[3095877][C-00000c0a] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 17:48:28.338] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002bcc", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:48:28.915] NOTICE[3095877][C-00000c0a] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002bcc' but no fax extension in 'fax-number-call'
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002c2c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002c2c", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002c2c", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002c2c", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002c2c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 17:52:23.689] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002c2c", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:52:23.691] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002c2c", "Detecting fax...") in new stack
+[2025-02-03 17:52:23.691] VERBOSE[3103015][C-00000c24] app_verbose.c: Detecting fax...
+[2025-02-03 17:52:23.691] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002c2c", "To=+13034094448") in new stack
+[2025-02-03 17:52:23.691] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002c2c", "") in new stack
+[2025-02-03 17:52:24.010] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002c2c", "") in new stack
+[2025-02-03 17:52:24.010] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002c2c", "5") in new stack
+[2025-02-03 17:52:29.011] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002c2c", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 17:52:29.011] VERBOSE[3103015][C-00000c24] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 17:52:29.011] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002c2c", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:52:29.588] NOTICE[3103015][C-00000c24] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002c2c' but no fax extension in 'fax-number-call'
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002c9c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002c9c", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002c9c", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002c9c", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002c9c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 17:56:24.525] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002c9c", "stasis-bifrost,incoming") in new stack
+[2025-02-03 17:56:24.527] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002c9c", "Detecting fax...") in new stack
+[2025-02-03 17:56:24.527] VERBOSE[3110344][C-00000c3d] app_verbose.c: Detecting fax...
+[2025-02-03 17:56:24.527] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002c9c", "To=+13034094448") in new stack
+[2025-02-03 17:56:24.527] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002c9c", "") in new stack
+[2025-02-03 17:56:24.662] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002c9c", "") in new stack
+[2025-02-03 17:56:24.662] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002c9c", "5") in new stack
+[2025-02-03 17:56:29.663] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002c9c", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 17:56:29.663] VERBOSE[3110344][C-00000c3d] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 17:56:29.663] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002c9c", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 17:56:30.860] NOTICE[3110344][C-00000c3d] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002c9c' but no fax extension in 'fax-number-call'
+[2025-02-03 18:00:24.993] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002d1b", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:00:24.993] VERBOSE[3117692][C-00000c5e] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:00:24.993] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002d1b", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:00:24.993] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002d1b", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:00:24.994] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002d1b", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:00:24.994] VERBOSE[3117692][C-00000c5e] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:00:24.994] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002d1b", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:00:24.994] VERBOSE[3117692][C-00000c5e] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:00:24.994] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002d1b", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:00:24.995] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002d1b", "Detecting fax...") in new stack
+[2025-02-03 18:00:24.995] VERBOSE[3117692][C-00000c5e] app_verbose.c: Detecting fax...
+[2025-02-03 18:00:24.995] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002d1b", "To=+13034094448") in new stack
+[2025-02-03 18:00:24.995] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002d1b", "") in new stack
+[2025-02-03 18:00:25.334] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002d1b", "") in new stack
+[2025-02-03 18:00:25.334] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002d1b", "5") in new stack
+[2025-02-03 18:00:30.335] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002d1b", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:00:30.335] VERBOSE[3117692][C-00000c5e] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:00:30.335] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002d1b", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:00:30.913] NOTICE[3117692][C-00000c5e] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002d1b' but no fax extension in 'fax-number-call'
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002d9b", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002d9b", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002d9b", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002d9b", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002d9b", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:04:25.498] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002d9b", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:04:25.500] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002d9b", "Detecting fax...") in new stack
+[2025-02-03 18:04:25.501] VERBOSE[3124997][C-00000c7b] app_verbose.c: Detecting fax...
+[2025-02-03 18:04:25.501] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002d9b", "To=+13034094448") in new stack
+[2025-02-03 18:04:25.501] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002d9b", "") in new stack
+[2025-02-03 18:04:25.765] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002d9b", "") in new stack
+[2025-02-03 18:04:25.765] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002d9b", "5") in new stack
+[2025-02-03 18:04:30.766] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002d9b", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:04:30.766] VERBOSE[3124997][C-00000c7b] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:04:30.766] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002d9b", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:04:31.344] NOTICE[3124997][C-00000c7b] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002d9b' but no fax extension in 'fax-number-call'
+[2025-02-03 18:08:26.293] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002e05", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002e05", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002e05", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002e05", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002e05", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:08:26.294] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002e05", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:08:26.296] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002e05", "Detecting fax...") in new stack
+[2025-02-03 18:08:26.296] VERBOSE[3132451][C-00000c9f] app_verbose.c: Detecting fax...
+[2025-02-03 18:08:26.296] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002e05", "To=+13034094448") in new stack
+[2025-02-03 18:08:26.296] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002e05", "") in new stack
+[2025-02-03 18:08:26.507] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002e05", "") in new stack
+[2025-02-03 18:08:26.507] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002e05", "5") in new stack
+[2025-02-03 18:08:31.507] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002e05", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:08:31.507] VERBOSE[3132451][C-00000c9f] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:08:31.507] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002e05", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:08:32.085] NOTICE[3132451][C-00000c9f] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002e05' but no fax extension in 'fax-number-call'
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002e3c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002e3c", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002e3c", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002e3c", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002e3c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:12:26.726] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002e3c", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:12:26.728] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002e3c", "Detecting fax...") in new stack
+[2025-02-03 18:12:26.728] VERBOSE[3139433][C-00000cb0] app_verbose.c: Detecting fax...
+[2025-02-03 18:12:26.728] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002e3c", "To=+13034094448") in new stack
+[2025-02-03 18:12:26.728] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002e3c", "") in new stack
+[2025-02-03 18:12:27.049] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002e3c", "") in new stack
+[2025-02-03 18:12:27.049] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002e3c", "5") in new stack
+[2025-02-03 18:12:32.050] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002e3c", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:12:32.050] VERBOSE[3139433][C-00000cb0] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:12:32.050] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002e3c", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:12:32.627] NOTICE[3139433][C-00000cb0] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002e3c' but no fax extension in 'fax-number-call'
+[2025-02-03 18:16:27.612] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002e97", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002e97", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002e97", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002e97", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002e97", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:16:27.613] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002e97", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:16:27.615] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002e97", "Detecting fax...") in new stack
+[2025-02-03 18:16:27.615] VERBOSE[3146536][C-00000cc3] app_verbose.c: Detecting fax...
+[2025-02-03 18:16:27.615] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002e97", "To=+13034094448") in new stack
+[2025-02-03 18:16:27.615] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002e97", "") in new stack
+[2025-02-03 18:16:27.855] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002e97", "") in new stack
+[2025-02-03 18:16:27.855] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002e97", "5") in new stack
+[2025-02-03 18:16:32.856] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002e97", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:16:32.856] VERBOSE[3146536][C-00000cc3] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:16:32.856] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002e97", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:16:33.454] NOTICE[3146536][C-00000cc3] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002e97' but no fax extension in 'fax-number-call'
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00002eb8", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00002eb8", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00002eb8", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00002eb8", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00002eb8", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:18:47.447] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00002eb8", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:18:47.450] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00002eb8", "Detecting fax...") in new stack
+[2025-02-03 18:18:47.450] VERBOSE[3150737][C-00000ccb] app_verbose.c: Detecting fax...
+[2025-02-03 18:18:47.450] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00002eb8", "To=+16198390436") in new stack
+[2025-02-03 18:18:47.450] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002eb8", "") in new stack
+[2025-02-03 18:18:47.685] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00002eb8", "") in new stack
+[2025-02-03 18:18:47.686] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00002eb8", "5") in new stack
+[2025-02-03 18:18:52.687] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00002eb8", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:18:52.687] VERBOSE[3150737][C-00000ccb] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:18:52.687] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00002eb8", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:18:53.845] NOTICE[3150737][C-00000ccb] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002eb8' but no fax extension in 'fax-number-call'
+[2025-02-03 18:18:55.587] VERBOSE[3150737][C-00000ccb] file.c: <PJSIP/sipcore-00002eb8> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:19:12.464] VERBOSE[3150737][C-00000ccb] file.c: <PJSIP/sipcore-00002eb8> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:19:19.931] VERBOSE[3150737][C-00000ccb] file.c: <PJSIP/sipcore-00002eb8> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002edb", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002edb", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002edb", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002edb", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002edb", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:20:28.147] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002edb", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:20:28.149] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002edb", "Detecting fax...") in new stack
+[2025-02-03 18:20:28.149] VERBOSE[3153553][C-00000cda] app_verbose.c: Detecting fax...
+[2025-02-03 18:20:28.149] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002edb", "To=+13034094448") in new stack
+[2025-02-03 18:20:28.149] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002edb", "") in new stack
+[2025-02-03 18:20:28.370] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002edb", "") in new stack
+[2025-02-03 18:20:28.370] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002edb", "5") in new stack
+[2025-02-03 18:20:33.371] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002edb", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:20:33.371] VERBOSE[3153553][C-00000cda] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:20:33.371] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002edb", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:20:33.968] NOTICE[3153553][C-00000cda] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002edb' but no fax extension in 'fax-number-call'
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00002ef7", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00002ef7", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00002ef7", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00002ef7", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00002ef7", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:22:49.127] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00002ef7", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:22:49.131] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00002ef7", "Detecting fax...") in new stack
+[2025-02-03 18:22:49.131] VERBOSE[3157853][C-00000ce0] app_verbose.c: Detecting fax...
+[2025-02-03 18:22:49.131] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00002ef7", "To=+16198390436") in new stack
+[2025-02-03 18:22:49.131] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002ef7", "") in new stack
+[2025-02-03 18:22:49.380] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00002ef7", "") in new stack
+[2025-02-03 18:22:49.380] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00002ef7", "5") in new stack
+[2025-02-03 18:22:54.381] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00002ef7", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:22:54.381] VERBOSE[3157853][C-00000ce0] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:22:54.381] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00002ef7", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:22:54.685] VERBOSE[3157853][C-00000ce0] file.c: <PJSIP/sipcore-00002ef7> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:22:55.739] NOTICE[3157853][C-00000ce0] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002ef7' but no fax extension in 'fax-number-call'
+[2025-02-03 18:23:11.563] VERBOSE[3157853][C-00000ce0] file.c: <PJSIP/sipcore-00002ef7> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:23:19.031] VERBOSE[3157853][C-00000ce0] file.c: <PJSIP/sipcore-00002ef7> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002f26", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002f26", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002f26", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002f26", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002f26", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:24:29.101] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002f26", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:24:29.103] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002f26", "Detecting fax...") in new stack
+[2025-02-03 18:24:29.103] VERBOSE[3160582][C-00000cec] app_verbose.c: Detecting fax...
+[2025-02-03 18:24:29.103] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002f26", "To=+13034094448") in new stack
+[2025-02-03 18:24:29.103] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002f26", "") in new stack
+[2025-02-03 18:24:29.487] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002f26", "") in new stack
+[2025-02-03 18:24:29.487] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002f26", "5") in new stack
+[2025-02-03 18:24:34.488] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002f26", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:24:34.488] VERBOSE[3160582][C-00000cec] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:24:34.488] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002f26", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:24:35.065] NOTICE[3160582][C-00000cec] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002f26' but no fax extension in 'fax-number-call'
+[2025-02-03 18:26:49.100] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00002f74", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:26:49.100] VERBOSE[3165027][C-00000cfc] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:26:49.100] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00002f74", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:26:49.101] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00002f74", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:26:49.101] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00002f74", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:26:49.101] VERBOSE[3165027][C-00000cfc] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:26:49.101] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00002f74", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:26:49.101] VERBOSE[3165027][C-00000cfc] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:26:49.101] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00002f74", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:26:49.103] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00002f74", "Detecting fax...") in new stack
+[2025-02-03 18:26:49.103] VERBOSE[3165027][C-00000cfc] app_verbose.c: Detecting fax...
+[2025-02-03 18:26:49.103] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00002f74", "To=+16198390436") in new stack
+[2025-02-03 18:26:49.103] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002f74", "") in new stack
+[2025-02-03 18:26:49.361] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00002f74", "") in new stack
+[2025-02-03 18:26:49.361] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00002f74", "5") in new stack
+[2025-02-03 18:26:54.362] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00002f74", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:26:54.362] VERBOSE[3165027][C-00000cfc] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:26:54.362] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00002f74", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:26:54.867] VERBOSE[3165027][C-00000cfc] file.c: <PJSIP/sipcore-00002f74> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:26:59.099] NOTICE[3165027][C-00000cfc] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002f74' but no fax extension in 'fax-number-call'
+[2025-02-03 18:27:11.747] VERBOSE[3165027][C-00000cfc] file.c: <PJSIP/sipcore-00002f74> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:27:19.213] VERBOSE[3165027][C-00000cfc] file.c: <PJSIP/sipcore-00002f74> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:27:36.094] VERBOSE[3165027][C-00000cfc] file.c: <PJSIP/sipcore-00002f74> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:27:43.561] VERBOSE[3165027][C-00000cfc] file.c: <PJSIP/sipcore-00002f74> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:27:47.173] WARNING[3165027][C-00000cfc] res_stasis_playback.c: 1738607209.39492: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00002f99", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00002f99", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00002f99", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00002f99", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00002f99", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:28:29.380] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00002f99", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:28:29.382] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00002f99", "Detecting fax...") in new stack
+[2025-02-03 18:28:29.382] VERBOSE[3167842][C-00000d06] app_verbose.c: Detecting fax...
+[2025-02-03 18:28:29.382] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00002f99", "To=+13034094448") in new stack
+[2025-02-03 18:28:29.382] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002f99", "") in new stack
+[2025-02-03 18:28:29.637] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00002f99", "") in new stack
+[2025-02-03 18:28:29.637] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00002f99", "5") in new stack
+[2025-02-03 18:28:34.638] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00002f99", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:28:34.638] VERBOSE[3167842][C-00000d06] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:28:34.638] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00002f99", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:28:35.216] NOTICE[3167842][C-00000d06] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002f99' but no fax extension in 'fax-number-call'
+[2025-02-03 18:30:49.260] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00002fe7", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:30:49.260] VERBOSE[3172198][C-00000d15] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:30:49.260] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00002fe7", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:30:49.260] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00002fe7", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:30:49.261] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00002fe7", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:30:49.261] VERBOSE[3172198][C-00000d15] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:30:49.261] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00002fe7", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:30:49.261] VERBOSE[3172198][C-00000d15] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:30:49.261] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00002fe7", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:30:49.262] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00002fe7", "Detecting fax...") in new stack
+[2025-02-03 18:30:49.262] VERBOSE[3172198][C-00000d15] app_verbose.c: Detecting fax...
+[2025-02-03 18:30:49.262] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00002fe7", "To=+16198390436") in new stack
+[2025-02-03 18:30:49.262] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002fe7", "") in new stack
+[2025-02-03 18:30:49.502] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00002fe7", "") in new stack
+[2025-02-03 18:30:49.502] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00002fe7", "5") in new stack
+[2025-02-03 18:30:54.503] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00002fe7", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:30:54.503] VERBOSE[3172198][C-00000d15] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:30:54.503] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00002fe7", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:30:54.624] VERBOSE[3172198][C-00000d15] file.c: <PJSIP/sipcore-00002fe7> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:30:55.680] NOTICE[3172198][C-00000d15] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002fe7' but no fax extension in 'fax-number-call'
+[2025-02-03 18:31:11.501] VERBOSE[3172198][C-00000d15] file.c: <PJSIP/sipcore-00002fe7> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:31:18.968] VERBOSE[3172198][C-00000d15] file.c: <PJSIP/sipcore-00002fe7> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:31:35.845] VERBOSE[3172198][C-00000d15] file.c: <PJSIP/sipcore-00002fe7> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:31:43.312] VERBOSE[3172198][C-00000d15] file.c: <PJSIP/sipcore-00002fe7> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:31:47.273] WARNING[3172198][C-00000d15] res_stasis_playback.c: 1738607449.39831: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:32:30.589] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00003001", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:32:30.589] VERBOSE[3175018][C-00000d1c] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:32:30.589] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00003001", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:32:30.589] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00003001", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:32:30.589] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00003001", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 18:32:30.590] VERBOSE[3175018][C-00000d1c] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 18:32:30.590] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00003001", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 18:32:30.590] VERBOSE[3175018][C-00000d1c] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 18:32:30.590] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00003001", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:32:30.591] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00003001", "Detecting fax...") in new stack
+[2025-02-03 18:32:30.591] VERBOSE[3175018][C-00000d1c] app_verbose.c: Detecting fax...
+[2025-02-03 18:32:30.591] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00003001", "To=+13034094448") in new stack
+[2025-02-03 18:32:30.591] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003001", "") in new stack
+[2025-02-03 18:32:30.954] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00003001", "") in new stack
+[2025-02-03 18:32:30.954] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00003001", "5") in new stack
+[2025-02-03 18:32:35.955] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00003001", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 18:32:35.955] VERBOSE[3175018][C-00000d1c] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 18:32:35.955] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00003001", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:32:36.533] NOTICE[3175018][C-00000d1c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003001' but no fax extension in 'fax-number-call'
+[2025-02-03 18:34:49.156] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00003036", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:34:49.156] VERBOSE[3179207][C-00000d2a] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:34:49.156] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00003036", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:34:49.156] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00003036", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:34:49.157] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00003036", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:34:49.157] VERBOSE[3179207][C-00000d2a] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:34:49.157] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00003036", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:34:49.157] VERBOSE[3179207][C-00000d2a] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:34:49.157] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00003036", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:34:49.158] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00003036", "Detecting fax...") in new stack
+[2025-02-03 18:34:49.158] VERBOSE[3179207][C-00000d2a] app_verbose.c: Detecting fax...
+[2025-02-03 18:34:49.158] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00003036", "To=+16198390436") in new stack
+[2025-02-03 18:34:49.158] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003036", "") in new stack
+[2025-02-03 18:34:49.380] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00003036", "") in new stack
+[2025-02-03 18:34:49.380] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00003036", "5") in new stack
+[2025-02-03 18:34:54.382] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00003036", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:34:54.382] VERBOSE[3179207][C-00000d2a] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:34:54.382] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00003036", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:34:54.490] VERBOSE[3179207][C-00000d2a] file.c: <PJSIP/sipcore-00003036> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:34:55.539] NOTICE[3179207][C-00000d2a] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003036' but no fax extension in 'fax-number-call'
+[2025-02-03 18:35:11.370] VERBOSE[3179207][C-00000d2a] file.c: <PJSIP/sipcore-00003036> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:35:18.846] VERBOSE[3179207][C-00000d2a] file.c: <PJSIP/sipcore-00003036> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:35:35.724] VERBOSE[3179207][C-00000d2a] file.c: <PJSIP/sipcore-00003036> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:35:43.191] VERBOSE[3179207][C-00000d2a] file.c: <PJSIP/sipcore-00003036> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:35:47.050] WARNING[3179207][C-00000d2a] res_stasis_playback.c: 1738607689.40072: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-000030a5", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-000030a5", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-000030a5", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-000030a5", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-000030a5", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:38:49.365] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-000030a5", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:38:49.367] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-000030a5", "Detecting fax...") in new stack
+[2025-02-03 18:38:49.367] VERBOSE[3186364][C-00000d46] app_verbose.c: Detecting fax...
+[2025-02-03 18:38:49.367] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-000030a5", "To=+16198390436") in new stack
+[2025-02-03 18:38:49.367] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-000030a5", "") in new stack
+[2025-02-03 18:38:49.622] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-000030a5", "") in new stack
+[2025-02-03 18:38:49.622] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-000030a5", "5") in new stack
+[2025-02-03 18:38:54.623] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-000030a5", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:38:54.623] VERBOSE[3186364][C-00000d46] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:38:54.623] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-000030a5", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:38:55.044] VERBOSE[3186364][C-00000d46] file.c: <PJSIP/sipcore-000030a5> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:38:59.341] NOTICE[3186364][C-00000d46] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000030a5' but no fax extension in 'fax-number-call'
+[2025-02-03 18:39:11.922] VERBOSE[3186364][C-00000d46] file.c: <PJSIP/sipcore-000030a5> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:39:19.389] VERBOSE[3186364][C-00000d46] file.c: <PJSIP/sipcore-000030a5> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:39:36.267] VERBOSE[3186364][C-00000d46] file.c: <PJSIP/sipcore-000030a5> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:39:43.733] VERBOSE[3186364][C-00000d46] file.c: <PJSIP/sipcore-000030a5> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:39:47.604] WARNING[3186364][C-00000d46] res_stasis_playback.c: 1738607929.40414: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00003104", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00003104", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00003104", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00003104", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00003104", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:42:49.421] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00003104", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:42:49.423] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00003104", "Detecting fax...") in new stack
+[2025-02-03 18:42:49.423] VERBOSE[3193339][C-00000d60] app_verbose.c: Detecting fax...
+[2025-02-03 18:42:49.423] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00003104", "To=+16198390436") in new stack
+[2025-02-03 18:42:49.424] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003104", "") in new stack
+[2025-02-03 18:42:49.645] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00003104", "") in new stack
+[2025-02-03 18:42:49.645] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00003104", "5") in new stack
+[2025-02-03 18:42:54.646] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00003104", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:42:54.646] VERBOSE[3193339][C-00000d60] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:42:54.646] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00003104", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:42:55.904] VERBOSE[3193339][C-00000d60] file.c: <PJSIP/sipcore-00003104> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:42:59.364] NOTICE[3193339][C-00000d60] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003104' but no fax extension in 'fax-number-call'
+[2025-02-03 18:43:12.781] VERBOSE[3193339][C-00000d60] file.c: <PJSIP/sipcore-00003104> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:43:20.248] VERBOSE[3193339][C-00000d60] file.c: <PJSIP/sipcore-00003104> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:43:37.125] VERBOSE[3193339][C-00000d60] file.c: <PJSIP/sipcore-00003104> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:43:44.591] VERBOSE[3193339][C-00000d60] file.c: <PJSIP/sipcore-00003104> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:43:47.302] WARNING[3193339][C-00000d60] res_stasis_playback.c: 1738608169.40759: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00003164", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00003164", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00003164", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00003164", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00003164", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:46:52.315] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00003164", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:46:52.317] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00003164", "Detecting fax...") in new stack
+[2025-02-03 18:46:52.317] VERBOSE[3200727][C-00000d72] app_verbose.c: Detecting fax...
+[2025-02-03 18:46:52.317] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00003164", "To=+16198390436") in new stack
+[2025-02-03 18:46:52.317] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003164", "") in new stack
+[2025-02-03 18:46:52.525] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00003164", "") in new stack
+[2025-02-03 18:46:52.525] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00003164", "5") in new stack
+[2025-02-03 18:46:57.526] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00003164", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:46:57.526] VERBOSE[3200727][C-00000d72] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:46:57.526] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00003164", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:46:57.605] VERBOSE[3200727][C-00000d72] file.c: <PJSIP/sipcore-00003164> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:46:58.723] NOTICE[3200727][C-00000d72] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003164' but no fax extension in 'fax-number-call'
+[2025-02-03 18:47:14.482] VERBOSE[3200727][C-00000d72] file.c: <PJSIP/sipcore-00003164> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:47:21.952] VERBOSE[3200727][C-00000d72] file.c: <PJSIP/sipcore-00003164> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:47:38.830] VERBOSE[3200727][C-00000d72] file.c: <PJSIP/sipcore-00003164> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:47:46.297] VERBOSE[3200727][C-00000d72] file.c: <PJSIP/sipcore-00003164> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:47:50.258] WARNING[3200727][C-00000d72] res_stasis_playback.c: 1738608412.41049: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-000031b1", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-000031b1", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-000031b1", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-000031b1", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-000031b1", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:50:51.984] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-000031b1", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:50:51.986] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-000031b1", "Detecting fax...") in new stack
+[2025-02-03 18:50:51.986] VERBOSE[3207678][C-00000d87] app_verbose.c: Detecting fax...
+[2025-02-03 18:50:51.986] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-000031b1", "To=+16198390436") in new stack
+[2025-02-03 18:50:51.986] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-000031b1", "") in new stack
+[2025-02-03 18:50:52.268] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-000031b1", "") in new stack
+[2025-02-03 18:50:52.268] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-000031b1", "5") in new stack
+[2025-02-03 18:50:57.269] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-000031b1", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:50:57.269] VERBOSE[3207678][C-00000d87] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:50:57.269] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-000031b1", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:50:57.402] VERBOSE[3207678][C-00000d87] file.c: <PJSIP/sipcore-000031b1> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:50:58.367] NOTICE[3207678][C-00000d87] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000031b1' but no fax extension in 'fax-number-call'
+[2025-02-03 18:51:14.281] VERBOSE[3207678][C-00000d87] file.c: <PJSIP/sipcore-000031b1> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:51:21.850] VERBOSE[3207678][C-00000d87] file.c: <PJSIP/sipcore-000031b1> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:51:38.727] VERBOSE[3207678][C-00000d87] file.c: <PJSIP/sipcore-000031b1> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:51:46.193] VERBOSE[3207678][C-00000d87] file.c: <PJSIP/sipcore-000031b1> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:51:49.987] WARNING[3207678][C-00000d87] res_stasis_playback.c: 1738608651.41313: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:54:51.843] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-000031f4", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:54:51.843] VERBOSE[3214514][C-00000d98] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:54:51.843] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-000031f4", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:54:51.843] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-000031f4", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:54:51.843] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-000031f4", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:54:51.843] VERBOSE[3214514][C-00000d98] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:54:51.843] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-000031f4", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:54:51.844] VERBOSE[3214514][C-00000d98] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:54:51.844] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-000031f4", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:54:51.845] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-000031f4", "Detecting fax...") in new stack
+[2025-02-03 18:54:51.845] VERBOSE[3214514][C-00000d98] app_verbose.c: Detecting fax...
+[2025-02-03 18:54:51.845] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-000031f4", "To=+16198390436") in new stack
+[2025-02-03 18:54:51.845] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-000031f4", "") in new stack
+[2025-02-03 18:54:52.043] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-000031f4", "") in new stack
+[2025-02-03 18:54:52.043] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-000031f4", "5") in new stack
+[2025-02-03 18:54:57.044] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-000031f4", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:54:57.044] VERBOSE[3214514][C-00000d98] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:54:57.044] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-000031f4", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:54:57.235] VERBOSE[3214514][C-00000d98] file.c: <PJSIP/sipcore-000031f4> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:54:58.401] NOTICE[3214514][C-00000d98] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000031f4' but no fax extension in 'fax-number-call'
+[2025-02-03 18:55:14.112] VERBOSE[3214514][C-00000d98] file.c: <PJSIP/sipcore-000031f4> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:55:21.578] VERBOSE[3214514][C-00000d98] file.c: <PJSIP/sipcore-000031f4> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:55:38.456] VERBOSE[3214514][C-00000d98] file.c: <PJSIP/sipcore-000031f4> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:55:45.923] VERBOSE[3214514][C-00000d98] file.c: <PJSIP/sipcore-000031f4> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:55:49.948] WARNING[3214514][C-00000d98] res_stasis_playback.c: 1738608891.41501: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-00003265", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-00003265", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-00003265", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-00003265", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-00003265", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 18:58:52.456] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-00003265", "stasis-bifrost,incoming") in new stack
+[2025-02-03 18:58:52.458] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-00003265", "Detecting fax...") in new stack
+[2025-02-03 18:58:52.458] VERBOSE[3221770][C-00000db5] app_verbose.c: Detecting fax...
+[2025-02-03 18:58:52.458] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-00003265", "To=+16198390436") in new stack
+[2025-02-03 18:58:52.459] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003265", "") in new stack
+[2025-02-03 18:58:52.698] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-00003265", "") in new stack
+[2025-02-03 18:58:52.698] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-00003265", "5") in new stack
+[2025-02-03 18:58:57.699] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-00003265", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 18:58:57.699] VERBOSE[3221770][C-00000db5] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 18:58:57.699] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-00003265", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 18:58:58.548] VERBOSE[3221770][C-00000db5] file.c: <PJSIP/sipcore-00003265> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:58:58.996] NOTICE[3221770][C-00000db5] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003265' but no fax extension in 'fax-number-call'
+[2025-02-03 18:59:15.426] VERBOSE[3221770][C-00000db5] file.c: <PJSIP/sipcore-00003265> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:59:22.893] VERBOSE[3221770][C-00000db5] file.c: <PJSIP/sipcore-00003265> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:59:39.769] VERBOSE[3221770][C-00000db5] file.c: <PJSIP/sipcore-00003265> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 18:59:47.236] VERBOSE[3221770][C-00000db5] file.c: <PJSIP/sipcore-00003265> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 18:59:50.603] WARNING[3221770][C-00000db5] res_stasis_playback.c: 1738609132.41882: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 19:02:54.728] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@internal:1] Verbose("PJSIP/sipcore-0000329c", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 19:02:54.728] VERBOSE[3228905][C-00000dc9] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 19:02:54.728] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@internal:2] NoOp("PJSIP/sipcore-0000329c", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:02:54.729] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@internal:3] Set("PJSIP/sipcore-0000329c", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:02:54.729] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@internal:4] GotoIf("PJSIP/sipcore-0000329c", "AC5107e286b5750624bd829224c387e986?from-twilio,+16198390436,1") in new stack
+[2025-02-03 19:02:54.729] VERBOSE[3228905][C-00000dc9] pbx_builtins.c: Goto (from-twilio,+16198390436,1)
+[2025-02-03 19:02:54.729] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@from-twilio:1] Verbose("PJSIP/sipcore-0000329c", "Call from +17325423012 to +16198390436") in new stack
+[2025-02-03 19:02:54.729] VERBOSE[3228905][C-00000dc9] app_verbose.c: Call from +17325423012 to +16198390436
+[2025-02-03 19:02:54.729] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@from-twilio:2] Stasis("PJSIP/sipcore-0000329c", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:02:54.730] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@receive-fax:1] Verbose("PJSIP/sipcore-0000329c", "Detecting fax...") in new stack
+[2025-02-03 19:02:54.730] VERBOSE[3228905][C-00000dc9] app_verbose.c: Detecting fax...
+[2025-02-03 19:02:54.730] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@receive-fax:2] Set("PJSIP/sipcore-0000329c", "To=+16198390436") in new stack
+[2025-02-03 19:02:54.730] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-0000329c", "") in new stack
+[2025-02-03 19:02:54.979] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@receive-fax:4] Ringing("PJSIP/sipcore-0000329c", "") in new stack
+[2025-02-03 19:02:54.979] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@receive-fax:5] Wait("PJSIP/sipcore-0000329c", "5") in new stack
+[2025-02-03 19:02:59.981] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@receive-fax:6] Goto("PJSIP/sipcore-0000329c", "fax-number-call,+16198390436,1") in new stack
+[2025-02-03 19:02:59.981] VERBOSE[3228905][C-00000dc9] pbx_builtins.c: Goto (fax-number-call,+16198390436,1)
+[2025-02-03 19:02:59.981] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@fax-number-call:1] Stasis("PJSIP/sipcore-0000329c", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:03:01.217] NOTICE[3228905][C-00000dc9] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000329c' but no fax extension in 'fax-number-call'
+[2025-02-03 19:03:01.287] VERBOSE[3228905][C-00000dc9] file.c: <PJSIP/sipcore-0000329c> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 19:03:18.164] VERBOSE[3228905][C-00000dc9] file.c: <PJSIP/sipcore-0000329c> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 19:03:25.630] VERBOSE[3228905][C-00000dc9] file.c: <PJSIP/sipcore-0000329c> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 19:03:42.508] VERBOSE[3228905][C-00000dc9] file.c: <PJSIP/sipcore-0000329c> Playing 'eabb8734-cff4-416c-b17d-8298cb0fbfd5.slin' (language 'en')
+[2025-02-03 19:03:49.975] VERBOSE[3228905][C-00000dc9] file.c: <PJSIP/sipcore-0000329c> Playing '3503e8f2-9cbb-4127-a48e-34a56df2bad0.slin' (language 'en')
+[2025-02-03 19:03:52.784] WARNING[3228905][C-00000dc9] res_stasis_playback.c: 1738609374.42109: Playback failed for sound:3503e8f2-9cbb-4127-a48e-34a56df2bad0
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@internal:1] Verbose("PJSIP/sipcore-000032be", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@internal:2] NoOp("PJSIP/sipcore-000032be", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@internal:3] Set("PJSIP/sipcore-000032be", "CALLERID(name)=+19599006477@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@internal:4] GotoIf("PJSIP/sipcore-000032be", "AC5107e286b5750624bd829224c387e986?from-twilio,+19705454503,1") in new stack
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] pbx_builtins.c: Goto (from-twilio,+19705454503,1)
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@from-twilio:1] Verbose("PJSIP/sipcore-000032be", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:04:50.135] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@from-twilio:2] Stasis("PJSIP/sipcore-000032be", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:04:50.137] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@receive-fax:1] Verbose("PJSIP/sipcore-000032be", "Detecting fax...") in new stack
+[2025-02-03 19:04:50.137] VERBOSE[3232391][C-00000dd5] app_verbose.c: Detecting fax...
+[2025-02-03 19:04:50.137] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@receive-fax:2] Set("PJSIP/sipcore-000032be", "To=+19705454503") in new stack
+[2025-02-03 19:04:50.137] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-000032be", "") in new stack
+[2025-02-03 19:04:50.330] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@receive-fax:4] Ringing("PJSIP/sipcore-000032be", "") in new stack
+[2025-02-03 19:04:50.330] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@receive-fax:5] Wait("PJSIP/sipcore-000032be", "5") in new stack
+[2025-02-03 19:04:55.331] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@receive-fax:6] Goto("PJSIP/sipcore-000032be", "fax-number-call,+19705454503,1") in new stack
+[2025-02-03 19:04:55.331] VERBOSE[3232391][C-00000dd5] pbx_builtins.c: Goto (fax-number-call,+19705454503,1)
+[2025-02-03 19:04:55.331] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@fax-number-call:1] Stasis("PJSIP/sipcore-000032be", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:04:55.708] NOTICE[3232391][C-00000dd5] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000032be' but no fax extension in 'fax-number-call'
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@internal:1] Verbose("PJSIP/sipcore-0000335a", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@internal:2] NoOp("PJSIP/sipcore-0000335a", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@internal:3] Set("PJSIP/sipcore-0000335a", "CALLERID(name)=+19599006477@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@internal:4] GotoIf("PJSIP/sipcore-0000335a", "AC5107e286b5750624bd829224c387e986?from-twilio,+19705454503,1") in new stack
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] pbx_builtins.c: Goto (from-twilio,+19705454503,1)
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@from-twilio:1] Verbose("PJSIP/sipcore-0000335a", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:10:45.741] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@from-twilio:2] Stasis("PJSIP/sipcore-0000335a", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:10:45.743] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@receive-fax:1] Verbose("PJSIP/sipcore-0000335a", "Detecting fax...") in new stack
+[2025-02-03 19:10:45.743] VERBOSE[3243292][C-00000dfd] app_verbose.c: Detecting fax...
+[2025-02-03 19:10:45.743] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@receive-fax:2] Set("PJSIP/sipcore-0000335a", "To=+19705454503") in new stack
+[2025-02-03 19:10:45.743] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-0000335a", "") in new stack
+[2025-02-03 19:10:45.937] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@receive-fax:4] Ringing("PJSIP/sipcore-0000335a", "") in new stack
+[2025-02-03 19:10:45.937] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@receive-fax:5] Wait("PJSIP/sipcore-0000335a", "5") in new stack
+[2025-02-03 19:10:50.938] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@receive-fax:6] Goto("PJSIP/sipcore-0000335a", "fax-number-call,+19705454503,1") in new stack
+[2025-02-03 19:10:50.938] VERBOSE[3243292][C-00000dfd] pbx_builtins.c: Goto (fax-number-call,+19705454503,1)
+[2025-02-03 19:10:50.938] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@fax-number-call:1] Stasis("PJSIP/sipcore-0000335a", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:10:51.695] NOTICE[3243292][C-00000dfd] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000335a' but no fax extension in 'fax-number-call'
+[2025-02-03 19:16:39.443] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@internal:1] Verbose("PJSIP/sipcore-000033dc", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@internal:2] NoOp("PJSIP/sipcore-000033dc", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@internal:3] Set("PJSIP/sipcore-000033dc", "CALLERID(name)=+19599006477@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@internal:4] GotoIf("PJSIP/sipcore-000033dc", "AC5107e286b5750624bd829224c387e986?from-twilio,+19705454503,1") in new stack
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] pbx_builtins.c: Goto (from-twilio,+19705454503,1)
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@from-twilio:1] Verbose("PJSIP/sipcore-000033dc", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:16:39.444] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@from-twilio:2] Stasis("PJSIP/sipcore-000033dc", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:16:39.446] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@receive-fax:1] Verbose("PJSIP/sipcore-000033dc", "Detecting fax...") in new stack
+[2025-02-03 19:16:39.446] VERBOSE[3253756][C-00000e1c] app_verbose.c: Detecting fax...
+[2025-02-03 19:16:39.446] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@receive-fax:2] Set("PJSIP/sipcore-000033dc", "To=+19705454503") in new stack
+[2025-02-03 19:16:39.446] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-000033dc", "") in new stack
+[2025-02-03 19:16:39.669] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@receive-fax:4] Ringing("PJSIP/sipcore-000033dc", "") in new stack
+[2025-02-03 19:16:39.669] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@receive-fax:5] Wait("PJSIP/sipcore-000033dc", "5") in new stack
+[2025-02-03 19:16:44.670] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@receive-fax:6] Goto("PJSIP/sipcore-000033dc", "fax-number-call,+19705454503,1") in new stack
+[2025-02-03 19:16:44.671] VERBOSE[3253756][C-00000e1c] pbx_builtins.c: Goto (fax-number-call,+19705454503,1)
+[2025-02-03 19:16:44.671] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@fax-number-call:1] Stasis("PJSIP/sipcore-000033dc", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:16:45.827] NOTICE[3253756][C-00000e1c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000033dc' but no fax extension in 'fax-number-call'
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00003405", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00003405", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00003405", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00003405", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00003405", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:18:51.290] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00003405", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:18:51.292] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00003405", "Detecting fax...") in new stack
+[2025-02-03 19:18:51.292] VERBOSE[3257673][C-00000e26] app_verbose.c: Detecting fax...
+[2025-02-03 19:18:51.292] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00003405", "To=+13034094448") in new stack
+[2025-02-03 19:18:51.292] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003405", "") in new stack
+[2025-02-03 19:18:51.526] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00003405", "") in new stack
+[2025-02-03 19:18:51.526] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00003405", "5") in new stack
+[2025-02-03 19:18:56.528] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00003405", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:18:56.528] VERBOSE[3257673][C-00000e26] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:18:56.528] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00003405", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:19:01.405] NOTICE[3257673][C-00000e26] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003405' but no fax extension in 'fax-number-call'
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@internal:1] Verbose("PJSIP/sipcore-00003444", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@internal:2] NoOp("PJSIP/sipcore-00003444", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@internal:3] Set("PJSIP/sipcore-00003444", "CALLERID(name)=+19599006477@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@internal:4] GotoIf("PJSIP/sipcore-00003444", "AC5107e286b5750624bd829224c387e986?from-twilio,+19705454503,1") in new stack
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] pbx_builtins.c: Goto (from-twilio,+19705454503,1)
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@from-twilio:1] Verbose("PJSIP/sipcore-00003444", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:22:37.829] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@from-twilio:2] Stasis("PJSIP/sipcore-00003444", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:22:37.832] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@receive-fax:1] Verbose("PJSIP/sipcore-00003444", "Detecting fax...") in new stack
+[2025-02-03 19:22:37.832] VERBOSE[3264384][C-00000e39] app_verbose.c: Detecting fax...
+[2025-02-03 19:22:37.832] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@receive-fax:2] Set("PJSIP/sipcore-00003444", "To=+19705454503") in new stack
+[2025-02-03 19:22:37.832] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-00003444", "") in new stack
+[2025-02-03 19:22:38.018] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@receive-fax:4] Ringing("PJSIP/sipcore-00003444", "") in new stack
+[2025-02-03 19:22:38.018] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@receive-fax:5] Wait("PJSIP/sipcore-00003444", "5") in new stack
+[2025-02-03 19:22:43.019] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@receive-fax:6] Goto("PJSIP/sipcore-00003444", "fax-number-call,+19705454503,1") in new stack
+[2025-02-03 19:22:43.019] VERBOSE[3264384][C-00000e39] pbx_builtins.c: Goto (fax-number-call,+19705454503,1)
+[2025-02-03 19:22:43.019] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@fax-number-call:1] Stasis("PJSIP/sipcore-00003444", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:22:43.736] NOTICE[3264384][C-00000e39] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003444' but no fax extension in 'fax-number-call'
+[2025-02-03 19:22:51.541] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-0000344c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:22:51.541] VERBOSE[3264713][C-00000e3b] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:22:51.541] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-0000344c", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:22:51.542] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-0000344c", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:22:51.542] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-0000344c", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:22:51.542] VERBOSE[3264713][C-00000e3b] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:22:51.542] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-0000344c", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:22:51.542] VERBOSE[3264713][C-00000e3b] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:22:51.542] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-0000344c", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:22:51.544] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-0000344c", "Detecting fax...") in new stack
+[2025-02-03 19:22:51.544] VERBOSE[3264713][C-00000e3b] app_verbose.c: Detecting fax...
+[2025-02-03 19:22:51.544] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-0000344c", "To=+13034094448") in new stack
+[2025-02-03 19:22:51.544] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-0000344c", "") in new stack
+[2025-02-03 19:22:51.926] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-0000344c", "") in new stack
+[2025-02-03 19:22:51.926] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-0000344c", "5") in new stack
+[2025-02-03 19:22:56.927] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-0000344c", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:22:56.927] VERBOSE[3264713][C-00000e3b] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:22:56.927] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-0000344c", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:22:57.565] NOTICE[3264713][C-00000e3b] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000344c' but no fax extension in 'fax-number-call'
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-0000347f", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-0000347f", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-0000347f", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-0000347f", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-0000347f", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:26:51.790] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-0000347f", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:26:51.792] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-0000347f", "Detecting fax...") in new stack
+[2025-02-03 19:26:51.792] VERBOSE[3271515][C-00000e49] app_verbose.c: Detecting fax...
+[2025-02-03 19:26:51.792] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-0000347f", "To=+13034094448") in new stack
+[2025-02-03 19:26:51.792] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-0000347f", "") in new stack
+[2025-02-03 19:26:52.050] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-0000347f", "") in new stack
+[2025-02-03 19:26:52.051] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-0000347f", "5") in new stack
+[2025-02-03 19:26:57.052] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-0000347f", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:26:57.052] VERBOSE[3271515][C-00000e49] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:26:57.052] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-0000347f", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:26:57.690] NOTICE[3271515][C-00000e49] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000347f' but no fax extension in 'fax-number-call'
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@internal:1] Verbose("PJSIP/sipcore-000034a1", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@internal:2] NoOp("PJSIP/sipcore-000034a1", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@internal:3] Set("PJSIP/sipcore-000034a1", "CALLERID(name)=+19599006477@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@internal:4] GotoIf("PJSIP/sipcore-000034a1", "AC5107e286b5750624bd829224c387e986?from-twilio,+19705454503,1") in new stack
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] pbx_builtins.c: Goto (from-twilio,+19705454503,1)
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@from-twilio:1] Verbose("PJSIP/sipcore-000034a1", "Call from +19599006477 to +19705454503") in new stack
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] app_verbose.c: Call from +19599006477 to +19705454503
+[2025-02-03 19:28:31.592] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@from-twilio:2] Stasis("PJSIP/sipcore-000034a1", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:28:31.594] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@receive-fax:1] Verbose("PJSIP/sipcore-000034a1", "Detecting fax...") in new stack
+[2025-02-03 19:28:31.594] VERBOSE[3274600][C-00000e52] app_verbose.c: Detecting fax...
+[2025-02-03 19:28:31.594] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@receive-fax:2] Set("PJSIP/sipcore-000034a1", "To=+19705454503") in new stack
+[2025-02-03 19:28:31.594] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-000034a1", "") in new stack
+[2025-02-03 19:28:31.812] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@receive-fax:4] Ringing("PJSIP/sipcore-000034a1", "") in new stack
+[2025-02-03 19:28:31.812] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@receive-fax:5] Wait("PJSIP/sipcore-000034a1", "5") in new stack
+[2025-02-03 19:28:36.813] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@receive-fax:6] Goto("PJSIP/sipcore-000034a1", "fax-number-call,+19705454503,1") in new stack
+[2025-02-03 19:28:36.813] VERBOSE[3274600][C-00000e52] pbx_builtins.c: Goto (fax-number-call,+19705454503,1)
+[2025-02-03 19:28:36.813] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@fax-number-call:1] Stasis("PJSIP/sipcore-000034a1", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:28:37.732] NOTICE[3274600][C-00000e52] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000034a1' but no fax extension in 'fax-number-call'
+[2025-02-03 19:30:52.197] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-000034bd", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:30:52.197] VERBOSE[3278636][C-00000e5c] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:30:52.197] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-000034bd", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:30:52.198] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-000034bd", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:30:52.198] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-000034bd", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:30:52.198] VERBOSE[3278636][C-00000e5c] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:30:52.198] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-000034bd", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:30:52.198] VERBOSE[3278636][C-00000e5c] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:30:52.198] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-000034bd", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:30:52.199] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-000034bd", "Detecting fax...") in new stack
+[2025-02-03 19:30:52.199] VERBOSE[3278636][C-00000e5c] app_verbose.c: Detecting fax...
+[2025-02-03 19:30:52.199] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-000034bd", "To=+13034094448") in new stack
+[2025-02-03 19:30:52.199] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-000034bd", "") in new stack
+[2025-02-03 19:30:52.493] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-000034bd", "") in new stack
+[2025-02-03 19:30:52.493] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-000034bd", "5") in new stack
+[2025-02-03 19:30:57.494] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-000034bd", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:30:57.494] VERBOSE[3278636][C-00000e5c] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:30:57.494] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-000034bd", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:30:58.111] NOTICE[3278636][C-00000e5c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000034bd' but no fax extension in 'fax-number-call'
+[2025-02-03 19:34:55.014] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-000034fd", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:34:55.014] VERBOSE[3285522][C-00000e6a] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:34:55.015] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-000034fd", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:34:55.015] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-000034fd", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:34:55.015] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-000034fd", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:34:55.015] VERBOSE[3285522][C-00000e6a] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:34:55.015] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-000034fd", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:34:55.015] VERBOSE[3285522][C-00000e6a] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:34:55.015] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-000034fd", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:34:55.017] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-000034fd", "Detecting fax...") in new stack
+[2025-02-03 19:34:55.017] VERBOSE[3285522][C-00000e6a] app_verbose.c: Detecting fax...
+[2025-02-03 19:34:55.017] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-000034fd", "To=+13034094448") in new stack
+[2025-02-03 19:34:55.017] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-000034fd", "") in new stack
+[2025-02-03 19:34:55.205] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-000034fd", "") in new stack
+[2025-02-03 19:34:55.205] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-000034fd", "5") in new stack
+[2025-02-03 19:35:00.206] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-000034fd", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:35:00.206] VERBOSE[3285522][C-00000e6a] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:35:00.206] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-000034fd", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:35:01.702] NOTICE[3285522][C-00000e6a] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000034fd' but no fax extension in 'fax-number-call'
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-0000352e", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-0000352e", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-0000352e", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-0000352e", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-0000352e", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:38:54.867] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-0000352e", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:38:54.869] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-0000352e", "Detecting fax...") in new stack
+[2025-02-03 19:38:54.869] VERBOSE[3292274][C-00000e77] app_verbose.c: Detecting fax...
+[2025-02-03 19:38:54.869] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-0000352e", "To=+13034094448") in new stack
+[2025-02-03 19:38:54.869] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-0000352e", "") in new stack
+[2025-02-03 19:38:55.144] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-0000352e", "") in new stack
+[2025-02-03 19:38:55.144] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-0000352e", "5") in new stack
+[2025-02-03 19:39:00.145] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-0000352e", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:39:00.145] VERBOSE[3292274][C-00000e77] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:39:00.145] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-0000352e", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:39:00.782] NOTICE[3292274][C-00000e77] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000352e' but no fax extension in 'fax-number-call'
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00003585", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00003585", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00003585", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00003585", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00003585", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:42:55.219] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00003585", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:42:55.221] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00003585", "Detecting fax...") in new stack
+[2025-02-03 19:42:55.221] VERBOSE[3299305][C-00000e8e] app_verbose.c: Detecting fax...
+[2025-02-03 19:42:55.221] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00003585", "To=+13034094448") in new stack
+[2025-02-03 19:42:55.221] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003585", "") in new stack
+[2025-02-03 19:42:55.520] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00003585", "") in new stack
+[2025-02-03 19:42:55.521] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00003585", "5") in new stack
+[2025-02-03 19:43:00.522] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00003585", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:43:00.522] VERBOSE[3299305][C-00000e8e] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:43:00.522] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00003585", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:43:01.140] NOTICE[3299305][C-00000e8e] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003585' but no fax extension in 'fax-number-call'
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-000035e6", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-000035e6", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-000035e6", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-000035e6", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-000035e6", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:46:55.698] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-000035e6", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:46:55.700] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-000035e6", "Detecting fax...") in new stack
+[2025-02-03 19:46:55.700] VERBOSE[3306218][C-00000ea4] app_verbose.c: Detecting fax...
+[2025-02-03 19:46:55.700] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-000035e6", "To=+13034094448") in new stack
+[2025-02-03 19:46:55.700] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-000035e6", "") in new stack
+[2025-02-03 19:46:56.088] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-000035e6", "") in new stack
+[2025-02-03 19:46:56.088] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-000035e6", "5") in new stack
+[2025-02-03 19:47:01.089] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-000035e6", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:47:01.089] VERBOSE[3306218][C-00000ea4] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:47:01.089] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-000035e6", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:47:01.727] NOTICE[3306218][C-00000ea4] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000035e6' but no fax extension in 'fax-number-call'
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00003649", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00003649", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00003649", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00003649", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00003649", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:50:55.929] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00003649", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:50:55.931] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00003649", "Detecting fax...") in new stack
+[2025-02-03 19:50:55.931] VERBOSE[3313323][C-00000ebb] app_verbose.c: Detecting fax...
+[2025-02-03 19:50:55.931] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00003649", "To=+13034094448") in new stack
+[2025-02-03 19:50:55.931] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003649", "") in new stack
+[2025-02-03 19:50:56.226] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00003649", "") in new stack
+[2025-02-03 19:50:56.226] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00003649", "5") in new stack
+[2025-02-03 19:51:01.227] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00003649", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:51:01.227] VERBOSE[3313323][C-00000ebb] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:51:01.227] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00003649", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:51:01.845] NOTICE[3313323][C-00000ebb] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003649' but no fax extension in 'fax-number-call'
+[2025-02-03 19:54:56.369] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@internal:1] Verbose("PJSIP/sipcore-00003697", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:54:56.369] VERBOSE[3320251][C-00000ece] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:54:56.369] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@internal:2] NoOp("PJSIP/sipcore-00003697", "Value of X-Twilio-AccountSid: AC5107e286b5750624bd829224c387e986") in new stack
+[2025-02-03 19:54:56.370] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@internal:3] Set("PJSIP/sipcore-00003697", "CALLERID(name)=+17325423012@csiq-bifrost-prod.pstn.twilio.com") in new stack
+[2025-02-03 19:54:56.370] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@internal:4] GotoIf("PJSIP/sipcore-00003697", "AC5107e286b5750624bd829224c387e986?from-twilio,+13034094448,1") in new stack
+[2025-02-03 19:54:56.370] VERBOSE[3320251][C-00000ece] pbx_builtins.c: Goto (from-twilio,+13034094448,1)
+[2025-02-03 19:54:56.370] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@from-twilio:1] Verbose("PJSIP/sipcore-00003697", "Call from +17325423012 to +13034094448") in new stack
+[2025-02-03 19:54:56.370] VERBOSE[3320251][C-00000ece] app_verbose.c: Call from +17325423012 to +13034094448
+[2025-02-03 19:54:56.370] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@from-twilio:2] Stasis("PJSIP/sipcore-00003697", "stasis-bifrost,incoming") in new stack
+[2025-02-03 19:54:56.371] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@receive-fax:1] Verbose("PJSIP/sipcore-00003697", "Detecting fax...") in new stack
+[2025-02-03 19:54:56.371] VERBOSE[3320251][C-00000ece] app_verbose.c: Detecting fax...
+[2025-02-03 19:54:56.371] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@receive-fax:2] Set("PJSIP/sipcore-00003697", "To=+13034094448") in new stack
+[2025-02-03 19:54:56.371] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003697", "") in new stack
+[2025-02-03 19:54:56.618] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@receive-fax:4] Ringing("PJSIP/sipcore-00003697", "") in new stack
+[2025-02-03 19:54:56.618] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@receive-fax:5] Wait("PJSIP/sipcore-00003697", "5") in new stack
+[2025-02-03 19:55:01.619] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@receive-fax:6] Goto("PJSIP/sipcore-00003697", "fax-number-call,+13034094448,1") in new stack
+[2025-02-03 19:55:01.619] VERBOSE[3320251][C-00000ece] pbx_builtins.c: Goto (fax-number-call,+13034094448,1)
+[2025-02-03 19:55:01.619] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@fax-number-call:1] Stasis("PJSIP/sipcore-00003697", "stasis-bifrost,incoming,,,nfax") in new stack
+[2025-02-03 19:55:02.256] NOTICE[3320251][C-00000ece] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003697' but no fax extension in 'fax-number-call'

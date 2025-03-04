@@ -1,0 +1,94 @@
+[2025-02-03 16:51:50.200] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:3] Answer("PJSIP/sipcore-0000255e", "") in new stack
+[2025-02-03 16:51:56.152] NOTICE[2991401][C-00000a70] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000255e' but no fax extension in 'fax-number-call'
+[2025-02-03 17:01:50.609] VERBOSE[3009413][C-00000ab6] pbx.c: Executing [+19709990955@receive-fax:3] Answer("PJSIP/sipcore-00002671", "") in new stack
+[2025-02-03 17:01:56.511] NOTICE[3009413][C-00000ab6] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002671' but no fax extension in 'fax-number-call'
+[2025-02-03 17:03:04.860] VERBOSE[3011786][C-00000ac3] pbx.c: Executing [+14692426457@receive-fax:3] Answer("PJSIP/sipcore-000026a7", "") in new stack
+[2025-02-03 17:03:10.691] NOTICE[3011786][C-00000ac3] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000026a7' but no fax extension in 'fax-number-call'
+[2025-02-03 17:07:55.456] VERBOSE[3021137][C-00000af9] pbx.c: Executing [+17604366256@receive-fax:3] Answer("PJSIP/sipcore-00002788", "") in new stack
+[2025-02-03 17:08:01.200] NOTICE[3021137][C-00000af9] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002788' but no fax extension in 'fax-number-call'
+[2025-02-03 17:11:51.612] VERBOSE[3028623][C-00000b1b] pbx.c: Executing [+19709990955@receive-fax:3] Answer("PJSIP/sipcore-00002808", "") in new stack
+[2025-02-03 17:11:57.657] NOTICE[3028623][C-00000b1b] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002808' but no fax extension in 'fax-number-call'
+[2025-02-03 17:13:06.443] VERBOSE[3031247][C-00000b24] pbx.c: Executing [+14692426457@receive-fax:3] Answer("PJSIP/sipcore-00002836", "") in new stack
+[2025-02-03 17:13:12.405] NOTICE[3031247][C-00000b24] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002836' but no fax extension in 'fax-number-call'
+[2025-02-03 17:23:06.518] VERBOSE[3049520][C-00000b62] pbx.c: Executing [+14692426457@receive-fax:3] Answer("PJSIP/sipcore-0000291d", "") in new stack
+[2025-02-03 17:23:12.304] NOTICE[3049520][C-00000b62] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000291d' but no fax extension in 'fax-number-call'
+[2025-02-03 17:29:06.688] VERBOSE[3060646][C-00000b8c] pbx.c: Executing [+13072653447@receive-fax:3] Answer("PJSIP/sipcore-000029cc", "") in new stack
+[2025-02-03 17:29:18.366] NOTICE[3060646][C-00000b8c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000029cc' but no fax extension in 'fax-number-call'
+[2025-02-03 17:48:23.128] VERBOSE[3095877][C-00000c0a] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002bcc", "") in new stack
+[2025-02-03 17:48:28.915] NOTICE[3095877][C-00000c0a] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002bcc' but no fax extension in 'fax-number-call'
+[2025-02-03 17:52:23.691] VERBOSE[3103015][C-00000c24] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002c2c", "") in new stack
+[2025-02-03 17:52:29.588] NOTICE[3103015][C-00000c24] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002c2c' but no fax extension in 'fax-number-call'
+[2025-02-03 17:56:24.527] VERBOSE[3110344][C-00000c3d] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002c9c", "") in new stack
+[2025-02-03 17:56:30.860] NOTICE[3110344][C-00000c3d] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002c9c' but no fax extension in 'fax-number-call'
+[2025-02-03 18:00:24.995] VERBOSE[3117692][C-00000c5e] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002d1b", "") in new stack
+[2025-02-03 18:00:30.913] NOTICE[3117692][C-00000c5e] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002d1b' but no fax extension in 'fax-number-call'
+[2025-02-03 18:04:25.501] VERBOSE[3124997][C-00000c7b] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002d9b", "") in new stack
+[2025-02-03 18:04:31.344] NOTICE[3124997][C-00000c7b] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002d9b' but no fax extension in 'fax-number-call'
+[2025-02-03 18:08:26.296] VERBOSE[3132451][C-00000c9f] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002e05", "") in new stack
+[2025-02-03 18:08:32.085] NOTICE[3132451][C-00000c9f] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002e05' but no fax extension in 'fax-number-call'
+[2025-02-03 18:12:26.728] VERBOSE[3139433][C-00000cb0] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002e3c", "") in new stack
+[2025-02-03 18:12:32.627] NOTICE[3139433][C-00000cb0] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002e3c' but no fax extension in 'fax-number-call'
+[2025-02-03 18:16:27.615] VERBOSE[3146536][C-00000cc3] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002e97", "") in new stack
+[2025-02-03 18:16:33.454] NOTICE[3146536][C-00000cc3] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002e97' but no fax extension in 'fax-number-call'
+[2025-02-03 18:18:47.450] VERBOSE[3150737][C-00000ccb] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002eb8", "") in new stack
+[2025-02-03 18:18:53.845] NOTICE[3150737][C-00000ccb] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002eb8' but no fax extension in 'fax-number-call'
+[2025-02-03 18:20:28.149] VERBOSE[3153553][C-00000cda] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002edb", "") in new stack
+[2025-02-03 18:20:33.968] NOTICE[3153553][C-00000cda] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002edb' but no fax extension in 'fax-number-call'
+[2025-02-03 18:22:49.131] VERBOSE[3157853][C-00000ce0] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002ef7", "") in new stack
+[2025-02-03 18:22:55.739] NOTICE[3157853][C-00000ce0] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002ef7' but no fax extension in 'fax-number-call'
+[2025-02-03 18:24:29.103] VERBOSE[3160582][C-00000cec] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002f26", "") in new stack
+[2025-02-03 18:24:35.065] NOTICE[3160582][C-00000cec] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002f26' but no fax extension in 'fax-number-call'
+[2025-02-03 18:26:49.103] VERBOSE[3165027][C-00000cfc] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002f74", "") in new stack
+[2025-02-03 18:26:59.099] NOTICE[3165027][C-00000cfc] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002f74' but no fax extension in 'fax-number-call'
+[2025-02-03 18:28:29.382] VERBOSE[3167842][C-00000d06] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00002f99", "") in new stack
+[2025-02-03 18:28:35.216] NOTICE[3167842][C-00000d06] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002f99' but no fax extension in 'fax-number-call'
+[2025-02-03 18:30:49.262] VERBOSE[3172198][C-00000d15] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00002fe7", "") in new stack
+[2025-02-03 18:30:55.680] NOTICE[3172198][C-00000d15] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00002fe7' but no fax extension in 'fax-number-call'
+[2025-02-03 18:32:30.591] VERBOSE[3175018][C-00000d1c] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003001", "") in new stack
+[2025-02-03 18:32:36.533] NOTICE[3175018][C-00000d1c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003001' but no fax extension in 'fax-number-call'
+[2025-02-03 18:34:49.158] VERBOSE[3179207][C-00000d2a] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003036", "") in new stack
+[2025-02-03 18:34:55.539] NOTICE[3179207][C-00000d2a] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003036' but no fax extension in 'fax-number-call'
+[2025-02-03 18:38:49.367] VERBOSE[3186364][C-00000d46] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-000030a5", "") in new stack
+[2025-02-03 18:38:59.341] NOTICE[3186364][C-00000d46] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000030a5' but no fax extension in 'fax-number-call'
+[2025-02-03 18:42:49.424] VERBOSE[3193339][C-00000d60] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003104", "") in new stack
+[2025-02-03 18:42:59.364] NOTICE[3193339][C-00000d60] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003104' but no fax extension in 'fax-number-call'
+[2025-02-03 18:46:52.317] VERBOSE[3200727][C-00000d72] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003164", "") in new stack
+[2025-02-03 18:46:58.723] NOTICE[3200727][C-00000d72] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003164' but no fax extension in 'fax-number-call'
+[2025-02-03 18:50:51.986] VERBOSE[3207678][C-00000d87] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-000031b1", "") in new stack
+[2025-02-03 18:50:58.367] NOTICE[3207678][C-00000d87] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000031b1' but no fax extension in 'fax-number-call'
+[2025-02-03 18:54:51.845] VERBOSE[3214514][C-00000d98] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-000031f4", "") in new stack
+[2025-02-03 18:54:58.401] NOTICE[3214514][C-00000d98] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000031f4' but no fax extension in 'fax-number-call'
+[2025-02-03 18:58:52.459] VERBOSE[3221770][C-00000db5] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-00003265", "") in new stack
+[2025-02-03 18:58:58.996] NOTICE[3221770][C-00000db5] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003265' but no fax extension in 'fax-number-call'
+[2025-02-03 19:02:54.730] VERBOSE[3228905][C-00000dc9] pbx.c: Executing [+16198390436@receive-fax:3] Answer("PJSIP/sipcore-0000329c", "") in new stack
+[2025-02-03 19:03:01.217] NOTICE[3228905][C-00000dc9] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000329c' but no fax extension in 'fax-number-call'
+[2025-02-03 19:04:50.137] VERBOSE[3232391][C-00000dd5] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-000032be", "") in new stack
+[2025-02-03 19:04:55.708] NOTICE[3232391][C-00000dd5] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000032be' but no fax extension in 'fax-number-call'
+[2025-02-03 19:10:45.743] VERBOSE[3243292][C-00000dfd] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-0000335a", "") in new stack
+[2025-02-03 19:10:51.695] NOTICE[3243292][C-00000dfd] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000335a' but no fax extension in 'fax-number-call'
+[2025-02-03 19:16:39.446] VERBOSE[3253756][C-00000e1c] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-000033dc", "") in new stack
+[2025-02-03 19:16:45.827] NOTICE[3253756][C-00000e1c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000033dc' but no fax extension in 'fax-number-call'
+[2025-02-03 19:18:51.292] VERBOSE[3257673][C-00000e26] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003405", "") in new stack
+[2025-02-03 19:19:01.405] NOTICE[3257673][C-00000e26] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003405' but no fax extension in 'fax-number-call'
+[2025-02-03 19:22:37.832] VERBOSE[3264384][C-00000e39] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-00003444", "") in new stack
+[2025-02-03 19:22:43.736] NOTICE[3264384][C-00000e39] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003444' but no fax extension in 'fax-number-call'
+[2025-02-03 19:22:51.544] VERBOSE[3264713][C-00000e3b] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-0000344c", "") in new stack
+[2025-02-03 19:22:57.565] NOTICE[3264713][C-00000e3b] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000344c' but no fax extension in 'fax-number-call'
+[2025-02-03 19:26:51.792] VERBOSE[3271515][C-00000e49] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-0000347f", "") in new stack
+[2025-02-03 19:26:57.690] NOTICE[3271515][C-00000e49] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000347f' but no fax extension in 'fax-number-call'
+[2025-02-03 19:28:31.594] VERBOSE[3274600][C-00000e52] pbx.c: Executing [+19705454503@receive-fax:3] Answer("PJSIP/sipcore-000034a1", "") in new stack
+[2025-02-03 19:28:37.732] NOTICE[3274600][C-00000e52] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000034a1' but no fax extension in 'fax-number-call'
+[2025-02-03 19:30:52.199] VERBOSE[3278636][C-00000e5c] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-000034bd", "") in new stack
+[2025-02-03 19:30:58.111] NOTICE[3278636][C-00000e5c] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000034bd' but no fax extension in 'fax-number-call'
+[2025-02-03 19:34:55.017] VERBOSE[3285522][C-00000e6a] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-000034fd", "") in new stack
+[2025-02-03 19:35:01.702] NOTICE[3285522][C-00000e6a] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000034fd' but no fax extension in 'fax-number-call'
+[2025-02-03 19:38:54.869] VERBOSE[3292274][C-00000e77] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-0000352e", "") in new stack
+[2025-02-03 19:39:00.782] NOTICE[3292274][C-00000e77] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000352e' but no fax extension in 'fax-number-call'
+[2025-02-03 19:42:55.221] VERBOSE[3299305][C-00000e8e] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003585", "") in new stack
+[2025-02-03 19:43:01.140] NOTICE[3299305][C-00000e8e] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003585' but no fax extension in 'fax-number-call'
+[2025-02-03 19:46:55.700] VERBOSE[3306218][C-00000ea4] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-000035e6", "") in new stack
+[2025-02-03 19:47:01.727] NOTICE[3306218][C-00000ea4] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-000035e6' but no fax extension in 'fax-number-call'
+[2025-02-03 19:50:55.931] VERBOSE[3313323][C-00000ebb] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003649", "") in new stack
+[2025-02-03 19:51:01.845] NOTICE[3313323][C-00000ebb] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003649' but no fax extension in 'fax-number-call'
+[2025-02-03 19:54:56.371] VERBOSE[3320251][C-00000ece] pbx.c: Executing [+13034094448@receive-fax:3] Answer("PJSIP/sipcore-00003697", "") in new stack
+[2025-02-03 19:55:02.256] NOTICE[3320251][C-00000ece] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-00003697' but no fax extension in 'fax-number-call'

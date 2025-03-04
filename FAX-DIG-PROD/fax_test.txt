@@ -1,0 +1,2 @@
+[2025-02-03 16:51:50.200] VERBOSE[2991401][C-00000a70] pbx.c: Executing [+19709990955@receive-fax:3] Answer("PJSIP/sipcore-0000255e", "") in new stack
+[2025-02-03 16:51:56.152] NOTICE[2991401][C-00000a70] chan_pjsip.c: FAX CNG detected on 'PJSIP/sipcore-0000255e' but no fax extension in 'fax-number-call'
