@@ -40,11 +40,14 @@ else
     OPEN_MAIN=true
 fi
 
+echo "Opening ports: ${PORT_ARRAY[@]}"
+
 # Loop through the port range and open each SSH session in a new terminal
 for PORT in "${PORT_ARRAY[@]}"; do
-    if [[ $PORT == 2223 ]]; then
+    if [[ $PORT == 2224 ]]; then
         gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER -t 'sudo su - csiq && cd ~/CSIQ-Callcontroller && exec bash'" &
     else
+        echo "Opening port $PORT"
         gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER; exec bash" &
     fi
 done
