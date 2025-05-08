@@ -2,13 +2,15 @@
 # Usage: ./bifrostUkProd.sh [media|core|proxy|proxy-core|web|micro|rabbit|mysql|mongo|transcript|asterisk|kamailio|all]
 
 
+ENV_FILE="/home/kaalan/projects/script/.env"
 # Load environment variables
-if [ -f .env ]; then
+if [ -f "$ENV_FILE" ]; then
     source .env
 else
     echo ".env file not found! Exiting..."
     exit 1
 fi
+
 
 # Define servers and their details as associative arrays
 declare -A SERVERS
@@ -16,6 +18,7 @@ declare -A SERVERS
 SERVERS[Web1]="$MAIN_IP_US_CSIQ 2222 hisham"
 SERVERS[Web2]="$MAIN_IP_US_CSIQ 2223 hisham"
 SERVERS[Web3]="$MAIN_IP_US_CSIQ 2224 hisham"
+SERVERS[Web4]="$MAIN_IP_US_CSIQ 2242 hisham"
 SERVERS[Web4]="$MAIN_IP_US_CSIQ 2242 hisham"
 SERVERS[Micro1]="$MAIN_IP_US_CSIQ 2225 hisham"
 SERVERS[Micro2]="$MAIN_IP_US_CSIQ 2226 hisham"
@@ -44,9 +47,9 @@ SERVERS[sip-proxy2]="$MAIN_IP_US_CSIQ 2247 admin"
 SERVERS[sip-media3]="$MAIN_IP_US_CSIQ 2250 admin"
 SERVERS[sip-core3]="$MAIN_IP_US_CSIQ 2249 admin"
 
-for server in "${!SERVERS[@]}"; do
-    echo "$server -> ${SERVERS[$server]}"
-done
+# for server in "${!SERVERS[@]}"; do
+#     echo "$server -> ${SERVERS[$server]}"
+# done
 
 # Define server groups
 declare -A SERVER_GROUPS
@@ -64,7 +67,7 @@ SERVER_GROUPS[media]="sip-media1 sip-media2 sip-media3"
 SERVER_GROUPS[core]="sip-core1 sip-core2 sip-core3"
 SERVER_GROUPS[proxy]="sip-proxy1 sip-proxy2"
 SERVER_GROUPS[proxy-core]="sip-proxy1 sip-proxy2 sip-core1 sip-core2 sip-core3"
-SERVER_GROUPS[sip]="sip-ansible sip-media1 sip-core1 sip-proxy1 sip-core2 sip-media2 sip-proxy2 sip-media3 sip-core3"
+SERVER_GROUPS[kamailio]="sip-ansible sip-media1 sip-core1 sip-proxy1 sip-core2 sip-media2 sip-proxy2 sip-media3 sip-core3"
 SERVER_GROUPS[all]="${!SERVERS[@]}"
 
 
@@ -74,15 +77,43 @@ if [[ -z "${SERVER_GROUPS[$1]}" ]]; then
     exit 1
 fi
 
+if [[ "$2" == "tmux" ]]; then
+    # Start a new tmux session named "ssh_sessions"
+    tmux new-session -d -s ssh_sessions
+    echo "tmux session started"
+fi
+
 
 # Open SSH sessions
 for SERVER_NAME in ${SERVER_GROUPS[$1]}; do
     read -r SERVER PORT USER <<< "${SERVERS[$SERVER_NAME]}"
     echo "Opening SSH session to server name -> $SERVER_NAME -> SERVER And PORT ($SERVER:$PORT) USER ->  $USER ... "
-    if [[ "$SERVER_NAME" == *"media"* ]]; then
-        echo media
-        gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER -t 'sudo su - csiq && cd ~/CSIQ-Callcontroller && exec bash'" &
+    
+    if [[ $2 == "tmux" ]]; then
+        if [[ "$SERVER_NAME" == *"media"* ]]; then
+            echo "Opening media session in tmux"
+            tmux split-window -v "ssh -p $PORT $USER@$SERVER -t 'sudo su - csiq && cd ~/CSIQ-Callcontroller && exec bash'" &
+        else
+            tmux split-window -v "ssh -p $PORT $USER@$SERVER; exec bash" &
+        fi
+        
     else
-        gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER; exec bash" &
+        if [[ "$SERVER_NAME" == *"media"* ]]; then
+            gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER -t 'sudo su - csiq && cd ~/CSIQ-Callcontroller && exec bash'" &
+        else
+            gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER; exec bash" &
+        fi
     fi
 done
+
+
+
+if [[ "$2" == "tmux" ]]; then
+    # Kill the initial pane (optional, if you don't need an extra pane)
+    tmux kill-pane -t 0
+    # tmux select-layout tiled   # Arrange panes in a tiled layout
+
+    # Attach to the tmux session to view all SSH sessions at once
+    tmux set-window-option synchronize-panes on
+    tmux attach-session -t ssh_sessions
+fi

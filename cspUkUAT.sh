@@ -1,20 +1,19 @@
 #!/bin/bash
-#usage: ./dev2.sh [proxy|core|media|ansible|main]
+#usage: ./cspUkUAT.sh [proxy|core|media|ansible|main]
 # Server details
-SERVER="3.229.214.89"
+SERVER="35.178.161.92"
 USER="admin"
 
 ANSIBLE_SERVER="$USER@$SERVER"
-MAIN_SERVER="hisham@54.208.211.137"
-DEV5_SERVER="hisham@52.20.147.147"
-DEV3_SERVER="hisham@54.164.197.47"
+MAIN_SERVER="hisham@18.170.233.43"
+AST_SERVER="hisham@3.11.245.195"
 
 
 # Port groups
 ALL_PORTS=(2222 2223 2224)
 MEDIA_PORTS=(2224)
-CORE_PORTS=(2223)
-PROXY_PORTS=(2222)
+CORE_PORTS=(2222)
+PROXY_PORTS=(2223)
 PROXY_CORE_PORTS=(2222 2223)
 
 # Check argument and assign the corresponding ports
@@ -32,17 +31,13 @@ elif [[ "$1" == "ansible" ]]; then
     PORT_ARRAY=()  # No SSH port session, only ansible
     gnome-terminal --tab -- bash -c "ssh $ANSIBLE_SERVER; exec bash" &
     exit 0
-elif [[ "$1" == "dev2" ]]; then
+elif [[ "$1" == "main" ]]; then
     PORT_ARRAY=()  # No SSH port session, only main server
     gnome-terminal --tab -- bash -c "ssh $MAIN_SERVER; exec bash" &
     exit 0
-elif [[ "$1" == "dev5" ]]; then
+elif [[ "$1" == "ast" ]]; then
     PORT_ARRAY=()  # No SSH port session, only main server
-    gnome-terminal --tab -- bash -c "ssh $DEV5_SERVER; exec bash" &
-    exit 0
-elif [[ "$1" == "dev3" ]]; then
-    PORT_ARRAY=()  # No SSH port session, only main server
-    gnome-terminal --tab -- bash -c "ssh $DEV3_SERVER; exec bash" &
+    gnome-terminal --tab -- bash -c "ssh $AST_SERVER; exec bash" &
     exit 0
 
 else
@@ -57,7 +52,7 @@ echo "Opening ports: ${PORT_ARRAY[@]}"
 # Loop through the port range and open each SSH session in a new terminal
 for PORT in "${PORT_ARRAY[@]}"; do
     if [[ $PORT == 2224 ]]; then
-        gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER -t 'sudo su - csiq && cd ~/CSIQ-Callcontroller && exec bash'" &
+        gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER -t 'sudo su - cspuk && cd ~/CSIQ-Callcontroller && exec bash'" &
     else
         echo "Opening port $PORT"
         gnome-terminal --tab -- bash -c "ssh -p $PORT $USER@$SERVER; exec bash" &
